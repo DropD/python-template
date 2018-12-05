@@ -1,1 +1,0 @@
-Written by Rico Häuselmann

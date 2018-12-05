@@ -3,10 +3,10 @@ requires = ["flit"]
 build-backend = "flit.buildapi"
 
 [tool.flit.metadata]
-module = "{{cookiecutter.project_slug}}"
-author = "{{cookiecutter.full_name}}"
-author-email = {{cookiecutter.email}}
-home-page = "https://{{cookiecutter.vcs_server}}/{{ cookiecutter.vcs_username }}/{{ cookiecutter.project_slug }}"
+module = "{{ cookiecutter.package_name }}"
+author = "{{ cookiecutter.full_name }}"
+author-email = {{ cookiecutter.email }}
+home-page = "https://{{ cookiecutter.vcs_server }}/{{ cookiecutter.vcs_username }}/{{ cookiecutter.repo_name }}"
 requires = [
 ]
 

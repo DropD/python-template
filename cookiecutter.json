@@ -1,0 +1,8 @@
+{
+    "full_name": "Rico Haeuselmann",
+    "email": "rico.haeuselmann@example.com",
+    "vcs_server": "github.com",
+    "vcs_username": "DropD",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "package_name": "{{ cookiecutter.repo_name.replace('-', '_') }}"
+}
