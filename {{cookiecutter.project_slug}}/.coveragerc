@@ -1,0 +1,9 @@
+[run]
+source = {{cookiecutter.project_slug}}
+
+[report]
+omit =
+    *test*
+
+[html]
+directory = coverage/html

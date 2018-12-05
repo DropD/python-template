@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "{{cookiecutter.project_slug}}"
+author = "{{cookiecutter.full_name}}"
+author-email = {{cookiecutter.email}}
+home-page = "https://{{cookiecutter.vcs_server}}/{{ cookiecutter.vcs_username }}/{{ cookiecutter.project_slug }}"
+requires = [
+]
+
+[tool.flit.metadata.requires-extra]
+test = ["pytest", "pytest-cov"]
+doc = ["sphinx"]
+dev = ["pre-commit", "prospector", "pylint", "yapf"]
+
+

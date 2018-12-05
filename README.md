@@ -1,2 +1,5 @@
 # python-template
-A template from where to start a new python repo
+A cookiecutter for a new python package
+
+## Remember to revise
+* LICENCE, AUTHORS and CHANGELOG files
