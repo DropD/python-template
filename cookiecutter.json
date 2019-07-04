@@ -6,5 +6,7 @@
     "vcs_username": "DropD",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "package_name": "{{ cookiecutter.repo_name.replace('-', '_') }}",
-    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
+    "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    "repo_url": "https://{{ cookiecutter.vcs_server }}/{{ cookiecutter.vcs_username }}/{{ cookiecutter.repo_name }}"
 }
