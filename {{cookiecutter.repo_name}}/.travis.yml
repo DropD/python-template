@@ -1,0 +1,21 @@
+language: python
+
+os:
+    - linux
+
+env:
+    - TEST_TYPE="Code-Quality"
+    - TEST_TYPE="Unittests"
+
+install:
+    - pip install .[dev]
+
+script:
+    - if [ "$TEST_TYPE" == "Unittests" ] ;
+      then pytest --cov-report=term-missing --cov={{ cookiecutter.package_name }};
+      fi
+    - if [ "$TEST_TYPE" == "Code-Quality" ] ;
+      then pre-commit run yapf --all-files; prospector ||
+      ( git diff; pip freeze | grep -E "^(yapf)|(pre-commit)|(prospector)"; cat /home/travis/.cache/pre-commit/pre-commit.log; exit 1; ) ;
+      fi
+
