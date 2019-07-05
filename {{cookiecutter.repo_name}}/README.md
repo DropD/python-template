@@ -5,4 +5,4 @@
 ## Documentation
 
 ## Changelog
- * [Stable version changelog]({{ cookiecutter.repo_url/tree/master/CHANGELOG.md }})
+ * [Stable version changelog]({{ cookiecutter.repo_url }}/tree/master/CHANGELOG.md)
