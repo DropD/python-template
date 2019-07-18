@@ -4,5 +4,13 @@
 
 ## Documentation
 
+### Install:
+
+```bash
+$ pip install poetry
+$ # from the project directory of {{ cookiecutter.project_name }}:
+$ poetry install
+```
+
 ## Changelog
  * [Stable version changelog]({{ cookiecutter.repo_url }}/tree/master/CHANGELOG.md)

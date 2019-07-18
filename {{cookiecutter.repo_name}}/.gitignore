@@ -117,3 +117,6 @@ venv.bak/
 *_BASE_*
 *_LOCAL_*
 *_REMOTE_*
+
+#build tools
+poetry.lock

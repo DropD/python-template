@@ -7,8 +7,13 @@ env:
     - TEST_TYPE="Code-Quality"
     - TEST_TYPE="Unittests"
 
+before_install:
+    - pip install poetry
+    - poetry config --list
+    - poetry debug:info
+
 install:
-    - pip install .[dev]
+    - poetry install
 
 script:
     - if [ "$TEST_TYPE" == "Unittests" ] ;
