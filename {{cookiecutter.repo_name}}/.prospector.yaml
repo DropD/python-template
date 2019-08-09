@@ -9,6 +9,9 @@ pylint:
 pyflakes:
   run: false
 
+mypy:
+  run: true
+
 pep257:
   run: true
   disable: 
