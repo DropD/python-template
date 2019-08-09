@@ -5,12 +5,12 @@ description = "{{ cookiecutter.project_short_description }}"
 authors = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
 
 [tool.poetry.dependencies]
-python = "^3.4"
+python = "^3.6"
 attrdict
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^1.14"
-prospector = "^1.1"
+prospector = {version = "^1.1",extras = ["with_mypy"]}
 yapf = "^0.25.0"
 bumpversion = "^0.5.3"
 pytest = "^4.2"
